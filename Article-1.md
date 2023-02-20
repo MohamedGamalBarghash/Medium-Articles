@@ -393,7 +393,6 @@ public class BirdScript: MonoBehaviour
 
 I added the lines from **31–35**, which basically computes the rotation based on the **Rigidbody velocity** based on the **Vector3.forward** direction to produce a Vector3 with the right direction vector to look towards, then we calculate the Quaternion rotation of the object with the **Quaternion.RotateTowards** function, and we take the **euler angles** of that (Which is the rotation on the 3 axis rather than the 4 axis Quaternion), we limit the result between **210** and **315** degrees on the **Z-axis** (which are the right values for me personally from testing in the editor), and finally set the **euler angles** of the **bird game object** to the euler values we got on line **35**.
 Now it's a game! you can download and play my version in  
-
 [HERE](https://drive.google.com/file/d/11fmoKa8_t5ibV0cY7slBmw5eQ8Q7o0OL/view)
 
 **Thanks for reading through!**
